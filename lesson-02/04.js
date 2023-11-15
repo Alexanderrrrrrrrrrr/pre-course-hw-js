@@ -1,9 +1,10 @@
 // code
-let passport = {
-    name: "Petr",
-    surname: "Petrov",
-};
-let newPasspotr = { ...passport };
-newPasspotr.name = "Ivan"
-console.log(passport.name); 
-console.log(newPasspotr.name); 
+const giveMeRightCondition = (value1, value2, maximum) => {
+    if (value1 == value2 && value1 <= maximum) {
+        console.log('Success!');
+    } else {
+        console.log('Something wrong!');
+    }
+}
+
+giveMeRightCondition(1, 100, 200)
