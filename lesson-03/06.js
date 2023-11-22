@@ -31,9 +31,5 @@ const users3 = [
         address: '321 Hickory St'
     },
 ];
-let newProperty = 'isMarried'
-users3.forEach((obj) => {
-    obj[newProperty] = true;
-});
 
-console.log(users3);
+const users4 = users3.map((user) =>  user ? { ...user, isMarried: true } : user);console.log(users4);

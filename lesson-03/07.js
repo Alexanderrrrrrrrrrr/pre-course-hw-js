@@ -5,10 +5,5 @@ const numbers = [
     [111, 200, 333, 400, 555],
 ];
 
-const deleteOddNumber = numbers.map((innerArray) => {
-    return innerArray.filter((number) => {
-        return number % 2 === 0; 
-    });
-});
+const numbers2 = numbers.map((innerArray) => {    return innerArray.filter((number) => number % 2 === 0);});console.log(numbers2);
 
-console.log(deleteOddNumber);
