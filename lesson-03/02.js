@@ -3,7 +3,7 @@ const words = ["яблоко", "банан", "апельсин", "манго", "
 function searchOrange() {
    let orangeIndex = words.indexOf("апельсин");
    
-   if (orangeIndex >= 0) {
+   if (orangeIndex !== -1) {
       console.log("Ура! нашел");
    } else {
       console.log("Придется поискать в другом магазине…");
