@@ -1,9 +1,6 @@
 // code
-​const colors = ["синий", "черный", "зеленый", "красный", "желтый", "зеленый"];
-
+const colors = ["синий", "черный", "зеленый", "красный", "желтый", "зеленый"];
 function createColorString() {
-    const germanFlagColors = colors.filter(color => color === "черный" || color === "красный" || color === "желтый");
-    return germanFlagColors.join('-');
+    return colors.filter(el => el === "черный" || el === "красный" || el === "желтый");
 }
-
-console.log(createColorString());
+console.log(createColorString().join('-'))
